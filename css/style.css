@@ -159,8 +159,7 @@ body {
 }
 
 body {
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--primary-white-color);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -500,6 +499,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+  color: var(--primary-text-color);
 }
 
 .container__text-name {
@@ -509,6 +509,7 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 16px;
+  color: var(--primary-text-color);
 }
 
 .container__title-name {
@@ -540,16 +541,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   color: var(--social-media-link-color);
-}
-
-.socialmedia .socialmedia__item + .socialmedia__item {
-  margin-left: 10px;
-}
-
-.socialmedia__item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  padding: 0 -5px;
 }
 
 .socialmedia__link {
@@ -557,21 +549,22 @@ button {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
-.socialmedia__item:hover,
-.socialmedia__item:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+.socialmedia__item {
+  padding: 0 5px;
 }
 
-.socialmedia__item--secondary {
+.socialmedia__link.second {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-white-color);
 }
 
-.socialmedia__item--secondary:hover,
-.socialmedia__item--secondary:focus {
+.socialmedia__link:hover,
+.socialmedia__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -618,13 +611,17 @@ footer {
 
 /* футер */
 
-.container-footer {
+.footer__list {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  /* justify-content: space-between; */
+  margin: 0 -34px;
 }
+
+.footer__item {
+  padding: 0 34px;
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -661,14 +658,6 @@ footer {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 21px;
-}
-
-.socialmedia__item--secondary {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--social-media-link-color);
 }
 
 .subscribe {
