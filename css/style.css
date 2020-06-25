@@ -132,6 +132,7 @@ table {
 /* Акцент #2196F3 */
 /* Цвет футера rgba(255, 255, 255, 0.6) */
 /* Цвет подписи rgba(255, 255, 255, 0.4) */
+/* Цвет футера #2f303a */
 
 html {
   box-sizing: border-box;
@@ -144,6 +145,7 @@ html {
   --primary-white-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --social-media-link-color: #afb1b8;
+  --footer-bcg-color: #2f303a;
 }
 
 *,
@@ -465,6 +467,7 @@ button {
 .layout__sect {
   padding-top: 94px;
   padding-bottom: 94px;
+  border: 1px solid #ececec;
 }
 
 .list {
@@ -606,20 +609,30 @@ button {
 }
 
 footer {
-  background-color: #2f303a;
+  background-color: var(--footer-bcg-color);
 }
 
 /* футер */
 
-.footer__list {
+.container-footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer__flex {
   display: flex;
   align-items: baseline;
-  /* justify-content: space-between; */
-  margin: 0 -34px;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .footer__item {
-  padding: 0 34px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-footer {
@@ -627,31 +640,32 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer__email {
-  margin-bottom: 9px;
-}
-
-.address__text {
-  display: inline-block;
-  margin-bottom: 9px;
-}
-
 .footer__email,
 .footer__phone {
   display: flex;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.join {
-  display: flex;
-  flex-direction: column;
+.footer__email {
+  margin-bottom: 9px;
 }
 
-.join__text {
+.address__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.join__text,
+.subscribe__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -663,6 +677,32 @@ footer {
 .subscribe {
   display: flex;
   flex-direction: column;
+}
+
+.footer__button {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+  text-transform: none;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 svg {
