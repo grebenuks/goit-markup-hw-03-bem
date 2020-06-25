@@ -337,6 +337,7 @@ textarea {
 }
 
 .container.hero {
+  text-align: center;
   width: 696px;
 }
 
