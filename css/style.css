@@ -609,3 +609,36 @@ button {
 footer {
   background-color: #2f303a;
 }
+
+/* футер */
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer__email,
+.footer__phone {
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
