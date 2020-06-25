@@ -599,6 +599,12 @@ button {
   border-radius: 4px;
 }
 
+.container__item-company:hover,
+.container__item-company:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 .container__link-company {
   display: flex;
   justify-content: center;
@@ -641,6 +647,10 @@ footer {
 .subscribe {
   display: flex;
   flex-direction: column;
+}
+
+svg {
+  fill: currentColor;
 }
 
 /* Авторские права */
